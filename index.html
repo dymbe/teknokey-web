@@ -20,6 +20,9 @@
 
             FB.AppEvents.logPageView();
 
+            FB.getLoginStatus(function(response) {
+                statusChangeCallback(response);
+            });
         };
 
         (function(d, s, id){
@@ -29,10 +32,6 @@
             js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-
-        FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-        });
     </script>
     <h1>Ey</h1>
 </body>
