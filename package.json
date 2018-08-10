@@ -1,0 +1,22 @@
+{
+  "name": "teknokey",
+  "version": "1.0.0",
+  "description": "A website for opening the front door to Teknobyen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dymbe/teknokey.git"
+  },
+  "author": "Erik Dymbe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dymbe/teknokey/issues"
+  },
+  "homepage": "https://github.com/dymbe/teknokey#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
