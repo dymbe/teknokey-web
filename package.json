@@ -1,22 +1,25 @@
 {
-  "name": "teknokey",
-  "version": "1.0.0",
-  "description": "A website for opening the front door to Teknobyen",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dymbe/teknokey.git"
-  },
-  "author": "Erik Dymbe",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dymbe/teknokey/issues"
-  },
-  "homepage": "https://github.com/dymbe/teknokey#readme",
+  "name": "teknokey-web",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.16.3"
-  }
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "2.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
