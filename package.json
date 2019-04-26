@@ -14,6 +14,13 @@
   "devDependencies": {
     "standard": "^12.0.1"
   },
+  "standard": {
+    "env": [
+      "jest",
+      "es6",
+      "browser"
+    ]
+  },
   "dependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
@@ -24,6 +31,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "standard && react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "standard"
   }
 }
