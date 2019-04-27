@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import FacebookLogin from 'react-facebook-login'
-import config from './config'
 
 class App extends Component {
   render () {
@@ -20,10 +19,10 @@ class App extends Component {
               Learn React
           </a>
           <FacebookLogin
-            appId={config.fbAppId}
+            appId={process.env.REACT_APP_FB_APP_ID}
             autoLoad
             fields='name,email,picture'
-            onClick={(e) => console.log(e)}
+            onClick={() => console.log(process.env.REACT_APP_FB_APP_ID)}
             callback={(e) => console.log(e)} />
         </header>
       </div>
