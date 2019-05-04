@@ -6,6 +6,7 @@ class Login extends Component {
   constructor (props) {
     super(props)
     this.logIn = this.logIn.bind(this)
+    this.fbResponse = this.fbResponse.bind(this)
   }
 
   render () {
@@ -31,14 +32,14 @@ class Login extends Component {
     this.props.setIsAuthenticated(true)
   }
 
-  /* fbResponse (res) {
+  fbResponse (res) {
     console.log(res)
     this.setState({
       isAuthenticated: true,
       user: { name: res.name, imageUrl: res.picture.data.url },
       token: res.accessToken
     })
-  } */
+  }
 }
 
 export default Login
